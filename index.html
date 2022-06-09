@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>e-commerce</title>
+</head>
+
+<body>
+
+    <div class="container mt-4 d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 mt-3">
+                <h3 style="font-family: 'Rubik Bubbles', cursive;">BARVA </h3>
+            </div>
+            <div class="col-sm-5" id="headers">
+
+
+                <input type="text" class="form-control form-input" style="border-color: black;"
+                    placeholder="Search anything..." id="searchbox">
+
+
+
+            </div>
+            <div class="col-sm-4 mt-3" id="headers">
+
+
+                <button id="girisYap" href="#" style="background-color: white;border:none;"> <svg
+                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    </svg>Giriş</button>
+
+
+                <button style="background-color: white;border:none;" href="#" style="text-decoration: none;color:black">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                    </svg> Favorilerim</button>
+
+                <button style="background-color: white;border:none;" href="#" style="text-decoration: none;color:black"
+                    id="sepet"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-cart" viewBox="0 0 16 16">
+
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg> Sepetim</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-xl-none d-lg-none d-xl-block ">
+        <div class="row">
+            <div class="col-sm-2">
+                <ul class="menu">
+                    <br>
+                    <li><a class="menuItem" href="#" style="color: white;">ERKEK</a></li>
+                    <li><a class="menuItem" href="#" style="color: white;">KADIN</a></li>
+                    <li><a class="menuItem" href="#" style="color: white;">ÇOCUK</a></li>
+                    <li><a class="menuItem" href="#" style="color: white;">SÜPERMARKET</a></li>
+                    <li><a class="menuItem" href="#" style="color: white;">KOZMETİK</a></li>
+                    <li><a class="menuItem" href="#" style="color: white;">AYAKKABI</a></li>
+                    <li><a class="menuItem" href="#" style="color: white;">TEKNOLOJİ</a></li><br>
+
+                    <li> <button id="girisMobil" href="#"
+                            style="background-color: antiquewhite;border:none; width: 40%;"> Giriş Yap</button></li>
+                </ul>
+                <button class="hamburger" style="width: 20%;">
+
+                    <i class="menuIcon material-icons" style="font-size: 100%;">Kategoriler</i>
+                    <i class="closeIcon material-icons">close</i>
+                </button>
+            </div>
+
+            <div class="col-sm-8">
+                <center>
+                    <h3 style="margin-top: 3%;font-family: 'Rubik Bubbles', cursive;  ">Barva </h3>
+                </center>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container mt-4 d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-7" id="categories">
+                <a href="#">Erkek</a>
+                <a href="#">Kadın</a>
+                <a href="#">Çocuk</a>
+                <a href="#">Süpermarket</a>
+                <a href="#">Kozmetik</a>
+                <a href="#">Ayakkabı</a>
+                <a href="#">Teknoloji</a>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="product">
+                    <img class='mx-auto img-thumbnail' src="images/nikeShoe.jpg" width="auto" height="auto" />
+                    <div class="card-body text-center mx-auto">
+                        <div class='cvp'>
+                            <h4 class="card-title font-weight-bold" s">Nike Air Max 270</h5>
+                                <p class="card-text">₺2099</p>
+
+                                <button class="btn cart px-auto d-block d-sm-none"
+                                    style="margin-left:10%;margin-top: -5%;" id="product">ADD TO CART</button>
+                                <select style="margin-left: 30%;margin-top: 5%;background-color: white;color: black;"
+                                    class="btn cart px-auto d-block d-sm-none">
+                                    <option value="volvo">36</option>
+                                    <option value="saab">37</option>
+                                    <option value="opel">38</option>
+                                    <option value="audi">39</option>
+                                    <option value="audi">40</option>
+                                    <option value="audi">41</option>
+                                    <option value="audi">42</option>
+                                </select>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="product">
+                    <img class='mx-auto img-thumbnail' src="images/nike.png" width="auto" height="auto" />
+                    <div class="card-body text-center mx-auto">
+                        <div class='cvp'>
+                            <h4 class="card-title font-weight-bold">Nike Air Max Genome</h4>
+                            <p class="card-text">₺1.249,99</p>
+                            <button class="btn cart px-auto d-block d-sm-none" style="margin-left:16%;margin-top: -5%;"
+                                id="product">ADD TO CART</button>
+                            <select style="margin-left: 30%;margin-top: 5%;background-color: white;color: black;"
+                                class="btn cart px-auto d-block d-sm-none">
+                                <option value="volvo">36</option>
+                                <option value="saab">37</option>
+                                <option value="opel">38</option>
+                                <option value="audi">39</option>
+                                <option value="audi">40</option>
+                                <option value="audi">41</option>
+                                <option value="audi">42</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="product">
+                    <img class='mx-auto img-thumbnail' src="images/sweatshirtNike.jpg" width="auto" height="auto" />
+                    <div class="card-body text-center mx-auto">
+                        <div class='cvp'>
+                            <h4 class="card-title font-weight-bold">Nike Sweatshirt</h4>
+                            <p class="card-text">₺869</p>
+                            <button class="btn cart px-auto d-block d-sm-none" style="margin-left:10%;margin-top: -5%;"
+                                id="product">ADD TO CART</button>
+
+                            <select style="margin-left: 30%;margin-top: 5%;background-color: white;color: black;"
+                                class="btn cart px-auto d-block d-sm-none">
+                                <option value="volvo">S</option>
+                                <option value="saab">M</option>
+                                <option value="opel">L</option>
+                                <option value="audi">XL</option>
+                                <option value="audi">XXL</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container d-none d-sm-block">
+        <div class="row">
+            <div class="col-sm-12" style="display: flex;justify-content:space-between">
+
+                <select name="cars" id="cars" style="margin-left: 11%;">
+                    <option value="volvo">36</option>
+                    <option value="saab">37</option>
+                    <option value="opel">38</option>
+                    <option value="audi">39</option>
+                    <option value="audi">40</option>
+                    <option value="audi">41</option>
+                    <option value="audi">42</option>
+                </select>
+
+                <select name="cars" id="cars" style="margin-left:0%;">
+                    <option value="volvo">36</option>
+                    <option value="saab">37</option>
+                    <option value="opel">38</option>
+                    <option value="audi">39</option>
+                    <option value="audi">40</option>
+                    <option value="audi">41</option>
+                    <option value="audi">42</option>
+                </select>
+
+                <select name="cars" id="cars" style="margin-right:11%;">
+                    <option value="volvo">S</option>
+                    <option value="saab">M</option>
+                    <option value="opel">L</option>
+                    <option value="audi">XL</option>
+                    <option value="audi">XXL</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container d-none d-sm-block">
+        <div class="row">
+            <div class="col-sm-12" style="display: flex;justify-content:space-between">
+                <button class="btn cart px-auto" style="margin-left:11%;" id="product">ADD TO CART</button>
+                <button class="btn cart px-auto" id="product">ADD TO CART</button>
+                <button class="btn cart px-auto" style="margin-right:10%;" id="product">ADD TO CART</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="product">
+                    <img class='mx-auto img-thumbnail' src="images/macbook.jpg" width="auto" height="auto" />
+                    <div class="card-body text-center mx-auto">
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Macbook Air 13" 256 GB SSD </h5>
+                            <p class="card-text">₺17.800</p>
+
+                            <button class="btn cart px-auto d-block d-sm-none" style="margin-left:23%;margin-top: -5%;"
+                                id="product">ADD TO CART</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="product">
+                    <img class='mx-auto img-thumbnail' src="images/pro.jpg" width="auto" height="auto" />
+                    <div class="card-body text-center mx-auto">
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Apple MacBook Pro 512 GB SSD</h5>
+                            <p class="card-text">₺41.700,99 </p>
+
+                            <button class="btn cart px-auto d-block d-sm-none" style="margin-left:25%;margin-top: -5%;"
+                                id="product">ADD TO CART</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="product">
+                    <img class='mx-auto img-thumbnail' src="images/lenovo.jpg" width="auto" height="auto" />
+                    <div class="card-body text-center mx-auto">
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Lenovo IdeaPad 1 TB + 256 GB SSD</h5>
+                            <p class="card-text">₺14.087,50 </p>
+                            <button class="btn cart px-auto d-block d-sm-none" style="margin-left:28%;margin-top: -5%;"
+                                id="product">ADD TO CART</button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container d-none d-sm-block">
+        <div class="row">
+            <div class="col-sm-12" style="display: flex;justify-content:space-between">
+                <button class="btn cart px-auto" style="margin-left:10%" id="product">ADD TO CART</button>
+                <button class="btn cart px-auto" id="product">ADD TO CART</button>
+                <button class="btn cart px-auto" style="margin-right:10%" id="product">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="product">
+                    <img class='mx-auto img-thumbnail' src="images/endParfüm.jpg" width="auto" height="auto" />
+                    <div class="card-body text-center mx-auto">
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">The End EDT Erkek Parfüm 100 ml</h5>
+                            <p class="card-text">₺59,90</p>
+                            <button class="btn cart px-auto d-block d-sm-none" style="margin-left:28%;margin-top: -5%;"
+                                id="product">ADD TO CART</button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="product">
+                    <img class='mx-auto img-thumbnail' src="images/deodorant.jpg" width="auto" height="auto" />
+                    <div class="card-body text-center mx-auto">
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Rexona Kadın Deodorant Sprey </h5>
+                            <p class="card-text">₺34,90 TL </p>
+                            <button class="btn cart px-auto d-block d-sm-none" style="margin-left:22%;margin-top: -5%;"
+                                id="product">ADD TO CART</button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="product">
+                    <img class='mx-auto img-thumbnail' src="images/krem1.jpg" width="95%" height="auto" />
+                    <div class="card-body text-center mx-auto">
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Arko Soft Touch Krem</h5>
+                            <p class="card-text">₺54,99</p>
+                            <button class="btn cart px-auto d-block d-sm-none" style="margin-left:15%;margin-top: -5%;"
+                                id="product">ADD TO CART</button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-none d-sm-block">
+        <div class="row">
+            <div class="col-sm-12" style="display: flex;justify-content:space-between">
+                <button class="btn cart px-auto" style="margin-left:10%" id="product">ADD TO CART</button>
+                <button class="btn cart px-auto" id="product">ADD TO CART</button>
+                <button class="btn cart px-auto" style="margin-right:10%" id="product">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <div class="container-fluid mt-4 d-none d-xl-block" style="background-color: rgb(230, 230, 230);">
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-3 mt-4">
+                <ul style="list-style-type:none">
+                    <li>
+                        <h4>BARVA </h4>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="#">Biz Kimiz</a>
+                    </li>
+                    <li>
+                        <a href="#">Kariyer</a>
+                    </li>
+                    <li>
+                        <a href="#">İletişim</a>
+                    </li>
+                    <li>
+                        <a href="#">Kurumsal Hediye Çeki</a>
+                    </li>
+                    <br>
+                    <li>
+                        <h5>Güvenli Alışveriş</h5>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="col-sm-3 mt-4">
+                <ul style="list-style-type:none">
+                    <li>
+                        <h4>Kampanyalar</h4>
+                    </li> <br>
+                    <li>
+                        <a href="#">Aktif Kampanyalar</a>
+                    </li>
+                    <li>
+                        <a href="#">Elite Üyelik</a>
+                    </li>
+                    <li>
+                        <a href="#">Hediye Fikirleri</a>
+                    </li>
+                    <li>
+                        <a href="#">Fırsatlar</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="col-sm-3 mt-4">
+                <ul>
+                    <li>
+                        <h4>Yardım</h4>
+                    </li> <br>
+                    <li>
+                        <a href="#">Sıkça Sorulan Sorular</a>
+                    </li>
+                    <li>
+                        <a href="#">Canlı Yardım</a>
+                    </li>
+                    <li>
+                        <a href="#">İade</a>
+                    </li>
+                    <li>
+                        <a href="#">İşlem Rehberi</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class='col-sm-1 mt-4'>
+
+            </div>
+            <div class="payment">
+                <img src="images/troy.jpg" style="width: 4%; height: 50px; ">
+                <img src="images/masteryeni.jpg" style="width: 4%; height: 50px;">
+                <img src="images/visa.png" style="width: 4%; height: 50px;">
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="modal">
+        <form>
+            <h3 id="modal-close">x</h3>
+            <label>E-posta adresiniz:</label>
+            <input type="email" placeholder="ornek@gmail.com" />
+            <label>Telefon</label>
+            <input type="tel" placeholder="5xx-xxx-xx-xx" />
+            <button id="form-button" style="margin-top: 5%;">Giriş Yap</button>
+        </form>
+    </div>
+
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
